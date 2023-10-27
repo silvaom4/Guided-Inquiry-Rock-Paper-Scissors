@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(rock-pap-sis.jpeg);
+}
+
+.main-container {
+    background-color: bisque;
+    margin: 50px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    
+}
+.tally {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+}
+
+.human-tile,
+.draws-tile,
+.cpu-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: salmon 1px solid;
+    font-size: 25px;
+    margin: 15px;
+    padding: 15px 50px;
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
+    color: black
+}
+
+.human,
+.cpu,
+.draws {
+    padding: 40px 50px;
+    margin: 20px;
+    font-size: 40px;
+    border: 5px solid pink;
+    color: red;
+    background-color: black;
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
+}
+
+.human {
+
+}
+
+
+.cpu {
+
+}
+
+.draws {
+
+}
+
+
+button {
+    padding: 15px;
+    margin: 15px;
+}
+
+.results {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid blue;
+}
+.cpu-choice-tile {
+    border: 1px solid gold;
+    padding: 25px 35px;
+    margin: 0 auto;
+    height: 50px;
+    width: 100px;
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
+}
+
+.cpu-choice {
+    border: green 1px solid;
+    margin: 0 auto; 
+    padding: 5px;
+}
+
+.winner-tile {
+    border: 1px solid orange;
+    padding: 15px;
+    margin: 5px 25px;
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
+    width: 100px;
+    height: 50px;
+    padding: 25px 35px;
+    margin: 0 auto;
+}
+
+.winner {
+    border: 1px solid purple;
+    padding: 5px;
+    margin: 0 auto;
+    
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
