@@ -39,13 +39,13 @@ rock.addEventListener('click', function() {
     console.log(options)
     cpuChoice.textContent = options
     if(options === 'rock'){
-        winner.textContent ='Results: ' + 'Tie'
+        winner.textContent ='Tie'
         setDrawsScore()
     } else if (options === 'paper'){
-        winner.textContent ='Results: ' + 'CPU Wins'
+        winner.textContent ='CPU Wins'
         setCpuScore()
     } else {
-        winner.textContent ='Results: ' + 'You win'
+        winner.textContent ='You win'
         setHumanScore()
 }
 })
@@ -59,13 +59,13 @@ paper.addEventListener('click', function() {
     console.log(options)
     cpuChoice.textContent = options
     if(options === 'paper'){
-        winner.textContent ='Results: ' + 'Tie'
+        winner.textContent ='Tie'
         setDrawsScore()
     } else if (options === 'rock'){
-        winner.textContent ='Results: ' + 'You Win'
+        winner.textContent ='You Win'
         setHumanScore()
     } else {
-        winner.textContent ='Results: ' + 'You lose'
+        winner.textContent ='You lose'
         setCpuScore()
     }
 })
@@ -77,14 +77,14 @@ scissors.addEventListener('click', function() {
     cpuChoice.textContent = options
 
     if(options === 'scissors') {
-        winner.textContent ='Results: ' + 'Tie'
+        winner.textContent = 'Tie'
         setDrawsScore()
     } else if (options === 'paper'){
-        winner.textContent ='Results: ' + 'You win'
+        winner.textContent ='You win'
         setHumanScore()
     }
     else {
-        winner.textContent ='Results: ' + 'You lose'
+        winner.textContent ='You lose'
         setCpuScore()
     }
 })
