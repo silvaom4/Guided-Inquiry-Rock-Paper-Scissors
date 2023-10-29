@@ -7,6 +7,7 @@ const cpuChoice = document.querySelector('.cpu-choice')
 const humanScore = document.querySelector('.human')
 const draws = document.querySelector('.draws')
 let cpuScore = document.querySelector('.cpu')
+let humanChoice = document.querySelector('.human-choice')
 
 let count = 0
 let count2 = 0 
@@ -38,6 +39,8 @@ rock.addEventListener('click', function() {
     let options = myOptions[Math.floor(Math.random()* myOptions.length)]
     console.log(options)
     cpuChoice.textContent = options
+    humanChoice.textContent = 'rock'
+
     if(options === 'rock'){
         winner.textContent ='Tie'
         setDrawsScore()
@@ -58,6 +61,7 @@ paper.addEventListener('click', function() {
     let options = myOptions[Math.floor(Math.random(4)* myOptions.length)]
     console.log(options)
     cpuChoice.textContent = options
+    humanChoice.textContent = 'paper'
     if(options === 'paper'){
         winner.textContent ='Tie'
         setDrawsScore()
@@ -75,6 +79,7 @@ scissors.addEventListener('click', function() {
     let options = myOptions[Math.floor(Math.random(4)* myOptions.length)]
     console.log(options)
     cpuChoice.textContent = options
+    humanChoice.textContent = 'scissors'
 
     if(options === 'scissors') {
         winner.textContent = 'Tie'
@@ -98,6 +103,7 @@ reset.addEventListener('click', function(){
     draws.textContent = count3
     winner.textContent = ''
     cpuChoice.textContent = ''
+    humanChoice.textContent = ''
 })
 
 

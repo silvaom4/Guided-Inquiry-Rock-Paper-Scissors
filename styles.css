@@ -102,6 +102,26 @@ button:hover {
     flex-direction: column;
     padding: 15px;
 }
+
+.human-choice-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 35px;
+    margin: 0 auto;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
+}
+
+.human-choice {
+    font-size: 15px;
+    padding: 15px;
+}
+
 .cpu-choice-tile {
     display: flex;
     flex-direction: column;
@@ -196,6 +216,14 @@ button.reset-btn {
         margin: 7px;
     }
 
+    .human-choice-tile {
+        font-size: 12px;
+    }
+
+    .human-choice{
+        font-size: 9px;
+    }
+
    .cpu-choice-tile {
     font-size: 12px;
    }
@@ -261,6 +289,14 @@ button.reset-btn {
         margin: 9px;
     }
 
+    .human-choice-tile {
+        font-size: 15px;
+    }
+
+    .human-choice{
+        font-size: 11px;
+    }
+
    .cpu-choice-tile {
     font-size: 15px;
    }
@@ -321,6 +357,14 @@ button.reset-btn {
     button {
         padding: 60px;
         margin: 11px;
+    }
+
+    .human-choice-tile {
+        font-size: 17px;
+    }
+
+    .human-choice{
+        font-size: 13px;
     }
 
    .cpu-choice-tile {
