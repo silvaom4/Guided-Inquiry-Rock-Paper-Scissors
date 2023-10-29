@@ -108,15 +108,3 @@ reset.addEventListener('click', function(){
 
 
 
-
-
-
-    // if(options === 'rock'){
-    //     document.getElementById('you-win').innerHTML = 'Tie'
-    // } else if (options === 'paper'){
-    //     document.getElementById('you-win').innerHTML = 'CPU Wins'
-
-    // } else if (options === 'scissors') {
-    //     document.getElementById('you-win').innerHTML = 'You win'
-    // }
-    // })
