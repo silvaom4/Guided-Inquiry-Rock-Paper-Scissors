@@ -4,19 +4,24 @@
 }
 body {
     background-image: url(rock-pap-sis.jpeg);
+    background-size: cover;
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family:  'Press Start 2P', Pixelify Sans, sans-serif;
 }
 
 .main-container {
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.7);
     margin: 50px;
 }
 
-.choices {
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    
-}
+
+
 .tally {
     display: flex;
     flex-direction: row;
@@ -31,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: salmon 1px solid;
+    text-align: center;
     font-size: 25px;
     margin: 15px;
     padding: 15px 50px;
@@ -46,28 +51,48 @@ body {
     margin: 20px;
     font-size: 40px;
     border: 5px solid pink;
+    box-shadow: 3px 3px 5px;
     color: red;
     background-color: black;
     font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
 }
 
-.human {
-
+h3 {
+    font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
 }
 
-
-.cpu {
-
+.choices {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    
 }
-
-.draws {
-
-}
-
 
 button {
-    padding: 15px;
+    padding: 80px;
     margin: 15px;
+}
+button:hover {
+    background-color: thistle;
+    border: thistle solid 4px;
+    color: black;
+}
+
+#rock {
+    background: url(rock.jpeg) center;
+    background-size: cover;
+}
+
+
+#paper {
+    background: url(paper.jpeg) center;
+    background-size: cover;
+}
+
+
+#scissors {
+    background: url(scissors3.jpeg) center;
+    background-size: cover;
 }
 
 .results {
@@ -76,25 +101,32 @@ button {
     justify-content: center;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid blue;
 }
 .cpu-choice-tile {
-    border: 1px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 25px 35px;
     margin: 0 auto;
     height: 50px;
     width: 100px;
+    font-size: 20px;
     font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
 }
 
 .cpu-choice {
-    border: green 1px solid;
-    margin: 0 auto; 
-    padding: 5px;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .winner-tile {
-    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 15px;
     margin: 5px 25px;
     font-family: 'Press Start 2P',Pixelify Sans, sans-serif;
@@ -105,13 +137,208 @@ button {
 }
 
 .winner {
-    border: 1px solid purple;
-    padding: 5px;
-    margin: 0 auto;
+    padding: 15px;
     
 }
 
 .reset {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+button.reset-btn {
+    padding: 35px;
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 12px;
+    }
+
+    .main-container {
+        margin: 20px;
+        height: 700px;
+    }
+
+    .tally {
+        padding: 5px;
+    }
+
+
+
+    .human-tile,
+    .draws-tile,
+    .cpu-tile {
+        font-size: 9px;
+        margin: 3px;
+        padding: 1px 5px;
+        text-align: center;
+    }
+
+  
+    .human,
+    .cpu,
+    .draws {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 10px;
+        border: 1px solid pink;
+        box-shadow: 1px 1px 2px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 30px;
+        margin: 7px;
+    }
+
+   .cpu-choice-tile {
+    font-size: 12px;
+   }
+
+   .cpu-choice {
+    font-size: 9px;
+   }
+
+   .winner-tile {
+    font-size: 12px;
+   }
+   .winner {
+    font-size: 9px;
+   }
+   button.reset-btn {
+    padding: 15px;
+   }
+    
+}
+
+
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    
+    h2 {
+        font-size: 15px;
+    }
+
+    .main-container {
+        margin: 25px;
+        height: 900px;
+    }
+
+    .tally {
+        padding: 7px;
+    }
+
+    .human-tile,
+    .draws-tile,
+    .cpu-tile {
+        font-size: 9px;
+        margin: 5px;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .human,
+    .cpu,
+    .draws {
+        padding: 20px 30px;
+        margin: 10px;
+        font-size: 10px;
+        border: 3px solid pink;
+        box-shadow: 1.8px 1.8px 2.5px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 45px;
+        margin: 9px;
+    }
+
+   .cpu-choice-tile {
+    font-size: 15px;
+   }
+
+   .cpu-choice {
+    font-size: 11px;
+   }
+
+   .winner-tile {
+    font-size: 15px;
+   }
+   .winner {
+    font-size: 11px;
+   }
+   button.reset-btn {
+    padding: 20px;
+   }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .main-container {
+        margin: 20px;
+        height: 800px;
+    }
+
+    .tally {
+        padding: 10px;
+    }
+
+    .human-tile,
+    .draws-tile,
+    .cpu-tile {
+        font-size: 17px;
+        margin: 10px;
+        padding: 11px 30px;
+        text-align: center;
+    }
+
+    .human,
+    .cpu,
+    .draws {
+        padding: 30px 40px;
+        margin: 12px;
+        font-size: 25px;
+        border: 3px solid pink;
+        box-shadow: 2.4px 2.4px 3.5px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 60px;
+        margin: 11px;
+    }
+
+   .cpu-choice-tile {
+    font-size: 17px;
+   }
+
+   .cpu-choice {
+    font-size: 13px;
+   }
+
+   .winner-tile {
+    font-size: 17px;
+   }
+   .winner {
+    font-size: 13px;
+   }
+   button.reset-btn {
+    padding: 28px;
+   }
+
 }
